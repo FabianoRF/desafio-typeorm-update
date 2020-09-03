@@ -34,6 +34,7 @@ class TransactionsRepository extends Repository<Transaction> {
         total: 0,
       },
     );
+    balance.total = balance.income - balance.outcome;
 
     return balance;
   }
